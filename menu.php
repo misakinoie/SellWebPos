@@ -195,7 +195,7 @@ input{
         <ul id="side_items">
 
             <li class="side-item">
-                <a href="/php%20text/cadastro_produtos.php">
+                <a href="./cadastro_produtos.php">
                     <i class="fa-solid fa-house"></i>
                     <span class="item-description">
                         Cadastro de Produtos
@@ -204,7 +204,7 @@ input{
             </li>
 
             <li class="side-item">
-                <a href="/php%20text/realizar_compra.php">
+                <a href="./realizar_compra.php">
                     <i class="fa-solid fa-cart-plus"></i>
                     <span class="item-description">
                         PDV
@@ -213,7 +213,7 @@ input{
             </li>
 
             <li class="side-item">
-                <a href="/php%20text/consultar_produtos.php">
+                <a href="./consultar_produtos.php">
                     <i class="fa-solid fa-box"></i>
                     <span class="item-description">
                         Produtos
@@ -222,7 +222,7 @@ input{
             </li>
 
             <li class="side-item">
-                <a href="/php%20text/consulta_venda.php">
+                <a href="./consulta_venda.php">
                     <i class="fa-solid fa-chart-line"></i>
                     <span class="item-description">
                         Produtos Vendidos

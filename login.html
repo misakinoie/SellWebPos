@@ -63,7 +63,7 @@
     <div class="login-container">
         <form action="#" method="POST" onsubmit="logar(); return false;">
             <div class="input-group">
-                <img src="/php%20text/img/LogoSample_ByTailorBrands-removebg-preview.png" alt="logo">
+                <img src="./img/LogoSample_ByTailorBrands-removebg-preview.png" alt="logo">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" required>
             </div>
@@ -81,7 +81,7 @@
             var password = document.getElementById('password').value;
 
             if (username === "admin" && password === "admin") {
-                location.href = "/php%20text/cadastro_produtos.php";
+                location.href = "./cadastro_produtos.php";
             } else {
                 alert('Usuário ou senha incorretos');
             }
