@@ -1,22 +1,20 @@
-<!-- index.php -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Produto</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh; /* Isso centraliza verticalmente */
+            height: 100vh; 
             margin: 0;
         }
 
         form {
-            width: 300px; /* Defina a largura do formulário conforme necessário */
+            width: 300px; 
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;

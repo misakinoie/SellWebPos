@@ -1,4 +1,3 @@
-<!-- editar_produto.php -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,23 +8,19 @@
 </head>
 <body>
     <?php
-    // Verifica se o código do produto foi passado via GET
     if (isset($_GET["cod"])) {
         $cod = $_GET["cod"];
 
-        // Conexão com o banco de dados (assumindo que já foi criada)
         $servername = "localhost";
         $username = "root";
         $password = "";
         $dbname = "sellwebpos_data";
         $conn = new mysqli($servername, $username, $password, $dbname);
 
-        // Verifica a conexão
         if ($conn->connect_error) {
             die("Erro de conexão: " . $conn->connect_error);
         }
 
-        // Consulta o produto com base no código recebido
         $sql = "SELECT * FROM produtos WHERE cod = '$cod'";
         $result = $conn->query($sql);
 
@@ -48,7 +43,6 @@
             echo "Produto não encontrado.";
         }
 
-        // Fecha a conexão com o banco de dados
         $conn->close();
     } else {
         echo "Código do produto não fornecido.";

@@ -20,25 +20,20 @@
     <h1>Consulta de Vendas</h1>
 
     <?php
-    // Conexão com o banco de dados
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "sellwebpos_data";
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Verifica a conexão
     if ($conn->connect_error) {
         die("Erro de conexão: " . $conn->connect_error);
     }
 
-    // Consulta SQL para selecionar todas as vendas
     $sql = "SELECT * FROM vendas";
     $result = $conn->query($sql);
 
-    // Verifica se há resultados
     if ($result->num_rows > 0) {
-        // Exibe os dados das vendas em uma tabela
         echo "<table border='1'>
                 <tr>
                     <th>ID Venda</th>
@@ -57,7 +52,6 @@
         echo "Nenhuma venda encontrada.";
     }
 
-    // Fecha a conexão com o banco de dados
     $conn->close();
     ?>
 

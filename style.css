@@ -8,38 +8,33 @@ h2{
        
     margin-left: -250px;
 }
-/* table{
-    margin-right: 200px;
-    display: flex;
-    margin-top: 15%;
-}  */
-/* Estilizando a tabela */
+
 table {
     width: 80%;
-    border-collapse: collapse; /* Mesclar as bordas das células */
+    border-collapse: collapse; 
     height: 100px;
     margin-top: 100px;
 }
 
-/* Estilizando as células das tabelas */
+
 td, th {
-    border: 1px solid #dddddd; /* Adicionar bordas */
-    text-align: left; /* Alinhar o texto à esquerda */
-    padding: 8px; /* Adicionar preenchimento interno */
+    border: 1px solid #dddddd; 
+    text-align: left; 
+    padding: 8px; 
 
 }
 
-/* Estilizando as células do cabeçalho */
+
 th {
-    background-color: #f2f2f2; /* Cor de fundo */
+    background-color: #f2f2f2; 
 }
 
-/* Alterando a cor de fundo de linhas alternadas */
+
 tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Alterando a cor de fundo quando a linha é destacada */
+
 tr:hover {
     background-color: #f2f2f2;
 }

@@ -78,12 +78,12 @@
     </form>
 
     <div id="lista-compra">
-        <!-- Lista de produtos encontrados -->
+
         <?php include_once 'buscar_produtos.php'; ?>
     </div>
 
     <?php 
-    // Calcular o total dos preços dos produtos na lista de compra
+
     $total = 0;
     foreach ($_SESSION["lista_compra"] as $produto) {
         $total += $produto['preco'];
@@ -93,7 +93,7 @@
     <h3>Total: R$ <?php echo number_format($total, 2, ',', '.'); ?></h3>
 
     <form action="venda.php" method="post">
-        <!-- Redireciona para a página de venda com o total como parâmetro GET -->
+
         <input type="hidden" name="total" value="<?php echo $total; ?>">
         <input type="submit" value="VENDA">
     </form>
